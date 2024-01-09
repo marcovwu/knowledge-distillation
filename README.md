@@ -98,5 +98,9 @@ Chia Wei Wu (@marcovwu)
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Acknowledgments
-Acknowledge any relevant sources, frameworks, or libraries used in your project.
-Give credit to the authors of papers or implementations that inspired or influenced your work.
+We would like to express our gratitude to the following projects and their contributors for their valuable work and inspiration:
+
+- Complementary Relation Contrastive Distillation [(CRCD)](https://github.com/Lechatelia/CRCD.git)
+- [Knowledge-Distillation-Zoo](https://github.com/AberHu/Knowledge-Distillation-Zoo.git)
+- [RepDistiller](https://github.com/HobbitLong/RepDistiller.git)
+- Beyond Appearance: a Semantic Controllable Self-Supervised Learning Framework for Human-Centric Visual Tasks [(SOLIDER)](https://github.com/tinyvision/SOLIDER.git)
