@@ -30,6 +30,8 @@ def compute_kd_loss(cfg, kd_losses, feat, target, epoch):
             loss = kd_loss(feat['score_stu'], feat['score_tea'], target.detach().clone())
         elif kd_type == 'uskd':
             loss = kd_loss(feat['fea_stu'], feat['score_stu'], target.detach().clone())
+        elif kd_type == 'uskd_tea':
+            loss = kd_loss(feat['fea_stu'], feat['score_stu'], feat['score_tea'].max(1)[1])
         else:
             print('%s loss not found!!' % kd_type)
         KD_LOSS += loss * cfg.MODEL.KD_LOSS_WEIGHT[inx]
